@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CLIPEROS conecta marcas con creadores de clips para impulsar campañas y multiplicar su alcance en redes sociales.">
+<title>CLIPEROS — Tu marca en todas partes</title>
+<style>
+:root{--bg:#09090d;--panel:#12121a;--panel2:#171722;--text:#f7f7fb;--muted:#a3a3b5;--purple:#9b6cff;--pink:#e45bff;--line:rgba(255,255,255,.1);--green:#8df0bc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:950;font-size:25px;letter-spacing:-1.5px}.brand span{color:var(--purple)}.navlinks{display:flex;gap:30px;color:#c4c4d0;font-size:14px}.navlinks a:hover{color:white}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;background:linear-gradient(110deg,var(--purple),var(--pink));color:white;font-weight:750;font-size:14px;border:0;cursor:pointer;box-shadow:0 8px 30px #9b6cff30;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.ghost{background:transparent;border:1px solid var(--line);box-shadow:none}
+.hero{padding:105px 0 85px;text-align:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:620px;height:420px;left:50%;top:-210px;transform:translateX(-50%);background:#8b4dff35;filter:blur(100px);pointer-events:none}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #a779ff55;background:#a779ff12;color:#d8c4ff;padding:7px 13px;border-radius:99px;font-size:12px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}h1{font-size:clamp(44px,7vw,82px);line-height:.99;letter-spacing:-5px;max-width:900px;margin:27px auto 22px;font-weight:900}.gradient{background:linear-gradient(100deg,#bba0ff 10%,#ed9bff 55%,#ffb6d9);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:18px}.actions{display:flex;gap:13px;justify-content:center;margin-top:32px;flex-wrap:wrap}.proof{margin-top:55px;display:flex;justify-content:center;gap:35px;flex-wrap:wrap;color:#b9b9c8;font-size:13px}.proof b{color:white}
+.visual{max-width:900px;margin:58px auto 0;padding:14px;border:1px solid #ffffff1c;background:linear-gradient(145deg,#ffffff10,#ffffff03);border-radius:22px;box-shadow:0 30px 100px #0009}.dashboard{background:#101019;border:1px solid var(--line);border-radius:14px;padding:22px;text-align:left}.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.live{font-size:11px;color:var(--green);background:#8df0bc12;padding:6px 10px;border-radius:99px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{background:#191925;border:1px solid var(--line);padding:18px;border-radius:12px}.metric small{color:var(--muted)}.metric strong{display:block;font-size:27px;margin-top:5px}.chart{height:120px;margin-top:15px;border-radius:10px;background:linear-gradient(180deg,#9b6cff24,transparent),repeating-linear-gradient(0deg,transparent 0 29px,#ffffff0c 30px);position:relative;overflow:hidden}.chart svg{width:100%;height:100%}
+section{padding:88px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 44px}.kicker{color:#bd9dff;font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.section-head h2{font-size:clamp(32px,4vw,49px);line-height:1.08;letter-spacing:-2px;margin:13px 0}.section-head p{color:var(--muted);margin:0;font-size:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:25px}.icon{width:43px;height:43px;display:grid;place-items:center;border-radius:12px;background:#9b6cff20;color:#c5a9ff;font-size:21px;margin-bottom:18px}.card h3{margin:0 0 8px;font-size:18px}.card p{color:var(--muted);font-size:14px;margin:0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:23px 19px;border-top:1px solid #a77bff70;background:linear-gradient(180deg,#a77bff12,transparent);border-radius:12px}.num{color:#c6aaff;font-size:12px;font-weight:850;letter-spacing:.1em}.step h3{font-size:17px;margin:14px 0 7px}.step p{font-size:13px;color:var(--muted);margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.split h2{font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-2.5px;margin:12px 0 18px}.split p{color:var(--muted)}.checks{display:grid;gap:13px;margin:25px 0}.check{display:flex;gap:11px;color:#dedee8;font-size:14px}.check span{color:var(--green);font-weight:900}.pricebox{background:linear-gradient(145deg,#1b1730,#11111a 70%);border:1px solid #a77bff55;border-radius:20px;padding:30px;box-shadow:0 20px 70px #0005}.pricebox h3{margin:0;font-size:19px}.pricebox .big{font-size:48px;font-weight:900;letter-spacing:-2px;margin:10px 0 0}.pricebox .sub{color:var(--muted);font-size:13px}.range{width:100%;accent-color:var(--purple);margin:18px 0}.calcrow{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}.calcrow span{color:var(--muted)}.calcrow strong{font-variant-numeric:tabular-nums}.note{font-size:11px;color:#88889a;margin-top:14px}
+.faq{max-width:800px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:20px 2px}.faq summary{cursor:pointer;font-weight:750;list-style:none;display:flex;justify-content:space-between;gap:15px}.faq summary:after{content:"+";color:#c5a9ff;font-size:22px;line-height:1}.faq details[open] summary:after{content:"−"}.faq p{color:var(--muted);font-size:14px;margin:13px 0 0}
+.cta{padding:65px 25px;text-align:center;border:1px solid #a77bff55;border-radius:22px;background:radial-gradient(ellipse at 50% 0,#9b6cff30,transparent 65%),#12121a}.cta h2{font-size:clamp(32px,5vw,52px);letter-spacing:-2px;line-height:1.05;margin:0 0 14px}.cta p{color:var(--muted);margin:0 auto 25px;max-width:560px}
+footer{padding:35px 0;color:#858596;font-size:12px;border-top:1px solid var(--line);margin-top:80px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot b{color:white;font-size:18px;letter-spacing:-1px}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:78px 0 55px}h1{letter-spacing:-2.8px}.hero p{font-size:16px}.metrics{grid-template-columns:1fr}.metric{padding:13px}.metric strong{font-size:23px}.grid3,.steps,.split{grid-template-columns:1fr}.steps{gap:10px}.split{gap:25px}section{padding:65px 0}.proof{gap:15px}.visual{margin-top:38px}.dashboard{padding:13px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav>
+<a class="brand" href="#">CLIP<span>EROS</span></a>
+<div class="navlinks"><a href="#como-funciona">Cómo funciona</a><a href="#beneficios">Beneficios</a><a href="#calculadora">Calculadora</a><a href="#faq">FAQ</a></div>
+<a class="btn" href="#contacto">Quiero impulsar mi marca</a>
+</nav>
+</header>
+<main>
+<section class="hero wrap">
+<div class="eyebrow"><span class="dot"></span> Marketing de contenido distribuido</div>
+<h1>Tu marca en todas partes.<br><span class="gradient">Un clip a la vez.</span></h1>
+<p>Conectamos tu marca con una red de cliperos que crean y publican contenido corto para llevar tu mensaje a nuevas audiencias.</p>
+<div class="actions"><a class="btn" href="#contacto">Lanzar mi campaña ↗</a><a class="btn ghost" href="#como-funciona">Descubrir cómo funciona</a></div>
+<div class="proof"><span>✦ <b>Contenido auténtico</b></span><span>✦ <b>Alcance multiplataforma</b></span><span>✦ <b>Resultados medibles</b></span></div>
+<div class="visual">
+<div class="dashboard">
+<div class="dash-top"><strong>Panel de campaña <span style="color:#a78bfa">/ Vista previa</span></strong><span class="live">● CAMPAÑA ACTIVA</span></div>
+<div class="metrics">
+<div class="metric"><small>Visualizaciones</small><strong>248.6K</strong><small style="color:var(--green)">↗ Alcance en crecimiento</small></div>
+<div class="metric"><small>Clips publicados</small><strong>186</strong><small>En distintas cuentas</small></div>
+<div class="metric"><small>Creadores activos</small><strong>42</strong><small>Participando en campaña</small></div>
+</div>
+<div class="chart"><svg viewBox="0 0 800 120" preserveAspectRatio="none"><defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#b18aff" stop-opacity=".55"/><stop offset="1" stop-color="#b18aff" stop-opacity="0"/></linearGradient></defs><path d="M0 100 C55 95 65 75 120 82 S190 90 235 62 S300 75 355 54 S430 66 480 36 S555 58 610 28 S700 40 800 8 L800 120 L0 120Z" fill="url(#g)"/><path d="M0 100 C55 95 65 75 120 82 S190 90 235 62 S300 75 355 54 S430 66 480 36 S555 58 610 28 S700 40 800 8" fill="none" stroke="#b18aff" stroke-width="3"/></svg></div>
+</div>
+</div>
+</section>
+<section id="beneficios" class="wrap">
+<div class="section-head"><div class="kicker">Una nueva forma de crecer</div><h2>Convierte contenido en <span class="gradient">alcance real.</span></h2><p>Haz que más personas descubran tu producto, servicio o proyecto a través de contenido creado para redes sociales.</p></div>
+<div class="grid3">
+<div class="card"><div class="icon">◎</div><h3>Más visibilidad</h3><p>Distribuye tu mensaje a través de múltiples creadores y cuentas para ampliar la presencia de tu marca.</p></div>
+<div class="card"><div class="icon">✂</div><h3>Contenido que conecta</h3><p>Clips verticales pensados para captar la atención y adaptarse al lenguaje de cada plataforma.</p></div>
+<div class="card"><div class="icon">↗</div><h3>Seguimiento claro</h3><p>Organiza publicaciones y visualizaciones para entender el rendimiento de tu campaña.</p></div>
+</div>
+</section>
+<section id="como-funciona" class="wrap">
+<div class="section-head"><div class="kicker">Simple y directo</div><h2>Así funciona <span class="gradient">CLIPEROS.</span></h2><p>De tu idea a una campaña de contenido distribuido en cuatro pasos.</p></div>
+<div class="steps">
+<div class="step"><div class="num">PASO 01</div><h3>Cuéntanos tu objetivo</h3><p>Comparte tu marca, contenido, público y meta de visualizaciones.</p></div>
+<div class="step"><div class="num">PASO 02</div><h3>Activamos cliperos</h3><p>Organizamos una red de creadores para producir y publicar clips.</p></div>
+<div class="step"><div class="num">PASO 03</div><h3>El contenido circula</h3><p>Los cliperos publican en sus canales siguiendo las pautas acordadas.</p></div>
+<div class="step"><div class="num">PASO 04</div><h3>Medimos resultados</h3><p>Revisamos enlaces y métricas disponibles para dar seguimiento a la campaña.</p></div>
+</div>
+</section>
+<section class="wrap">
+<div class="split">
+<div><div class="kicker">Para marcas y proyectos</div><h2>Tu contenido merece llegar <span class="gradient">más lejos.</span></h2><p>CLIPEROS te ayuda a convertir videos, canciones, lanzamientos y campañas en piezas cortas que pueden circular por distintas comunidades digitales.</p><div class="checks"><div class="check"><span>✓</span> Campañas para productos, artistas y empresas</div><div class="check"><span>✓</span> Red de creadores organizada por campaña</div><div class="check"><span>✓</span> Coordinación y seguimiento de publicaciones</div><div class="check"><span>✓</span> Modelo flexible según tus objetivos</div></div><a class="btn" href="#contacto">Hablemos de tu campaña ↗</a></div>
+<div class="pricebox" id="calculadora"><h3>Calcula tu campaña</h3><div class="sub">Estimación ilustrativa según la tarifa que configures.</div><div class="big" id="viewsLabel">100.000</div><div class="sub">visualizaciones objetivo</div><input class="range" id="views" type="range" min="10000" max="1000000" step="10000" value="100000"><div class="calcrow"><span>Tarifa estimada</span><strong>Bs 1 / 1.000 vistas</strong></div><div class="calcrow"><span>Inversión estimada</span><strong id="cost">Bs 100</strong></div><div class="calcrow"><span>Modelo</span><strong>Por visualizaciones</strong></div><div class="note">La cifra es una simulación, no una cotización. Las visualizaciones reales dependen del rendimiento y de las condiciones de cada campaña.</div></div>
+</div>
+</section>
+<section id="faq" class="wrap">
+<div class="section-head"><div class="kicker">Preguntas frecuentes</div><h2>Lo que necesitas <span class="gradient">saber.</span></h2></div>
+<div class="faq">
+<details><summary>¿Qué es CLIPEROS?</summary><p>Es un servicio de coordinación de campañas de clipping que conecta marcas con creadores que producen y publican videos cortos.</p></details>
+<details><summary>¿En qué plataformas se pueden publicar los clips?</summary><p>La campaña puede coordinarse para plataformas de video corto como TikTok, Instagram Reels y YouTube Shorts, según el alcance acordado.</p></details>
+<details><summary>¿Puedo promocionar una canción o un artista?</summary><p>Sí. Las campañas pueden enfocarse en música, lanzamientos, productos, servicios, marcas personales y otros proyectos.</p></details>
+<details><summary>¿Cómo se miden las visualizaciones?</summary><p>Se recopilan los enlaces y las métricas disponibles de las publicaciones participantes. El método de reporte se define antes de iniciar la campaña.</p></details>
+<details><summary>¿Las visualizaciones están garantizadas?</summary><p>No se debe asumir que una publicación tendrá un resultado específico. El rendimiento depende de la plataforma, el contenido y la respuesta de la audiencia.</p></details>
+</div>
+</section>
+<section class="wrap" id="contacto">
+<div class="cta"><div class="kicker">Tu próxima campaña empieza aquí</div><h2>Hagamos que todos<br><span class="gradient">hablen de tu marca.</span></h2><p>Cuéntanos qué quieres promocionar y te ayudaremos a plantear una campaña de clipping.</p><a class="btn" href="mailto:hola@cliperos.com?subject=Quiero%20una%20campana%20con%20CLIPEROS">Solicitar información ↗</a></div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><b>CLIP<span style="color:#a78bfa">EROS</span></b><div>Contenido que se mueve.</div></div><div>© 2026 CLIPEROS. Todos los derechos reservados.</div></div></footer>
+<script>
+const slider=document.getElementById('views'), label=document.getElementById('viewsLabel'), cost=document.getElementById('cost');
+function update(){const n=Number(slider.value);label.textContent=n.toLocaleString('es-BO');cost.textContent='Bs '+(n/1000).toLocaleString('es-BO',{maximumFractionDigits:2});}
+slider.addEventListener('input',update);update();
+</script>
+</body>
+</html>
